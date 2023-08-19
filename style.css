@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 8px;
+  margin: 32px 0
+}
+
+#content {
+   margin-top: 3rem;
+}
+
+.weather {
+  padding: 8px;
+  border: 1px solid #1a1a1a;
+  border-radius: 10px;
+  width: 250px;
+  background-color: #788D8E;
+}
+
+
+
+.weather__city {
+  font-size: 1.2rem
+
+}
+
+
+.weather__condition {
+  display: flex;
+  align-items: center
+}
+
+.weather__temprature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#temp-switch {
+  appearance: none;
+}
+
+#temp-switch ~ .celsius,
+#temp-switch:checked ~ .fahrenheit {
+   display: inline
+}
+
+#temp-switch ~ .fahrenheit,
+#temp-switch:checked ~ .celsius {
+  display: none;
+}
+
